@@ -11,6 +11,9 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>ribbon-consumer</module>
+        <module>ribbon</module>
+        <module>eureka-client2</module>
     </modules>
 
     <dependencyManagement>
