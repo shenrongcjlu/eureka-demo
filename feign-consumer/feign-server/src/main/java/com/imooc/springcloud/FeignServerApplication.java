@@ -4,22 +4,18 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.cloud.openfeign.FeignClient;
 
 /**
  * 说明：
  *
  * @author: shenrong
- * @date: 2024/2/12 20:56
+ * @date: 2024/2/24 16:17
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
-public class Application {
-
+public class FeignServerApplication {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(Application.class)
+        new SpringApplicationBuilder(FeignServerApplication.class)
                 .web(WebApplicationType.SERVLET)
                 .run(args);
     }

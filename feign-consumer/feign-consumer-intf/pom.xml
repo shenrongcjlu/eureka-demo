@@ -3,20 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>eureka-demo</artifactId>
-        <groupId>org.example</groupId>
+        <artifactId>feign-consumer</artifactId>
+        <groupId>com.imooc</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.imooc</groupId>
-    <artifactId>feign-consumer</artifactId>
-    <packaging>pom</packaging>
-    <name>feign-consumer</name>
-    <modules>
-        <module>feign-consumer-intf</module>
-        <module>feign-server</module>
-    </modules>
+    <artifactId>feign-consumer-intf</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -36,4 +30,5 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
+
 </project>
