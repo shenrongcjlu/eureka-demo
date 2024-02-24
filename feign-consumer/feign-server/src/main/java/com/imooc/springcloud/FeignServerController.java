@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @Slf4j
-public class FeignClientController implements IService {
+public class FeignServerController implements IService {
 
     @Value("${server.port}")
     private String port;

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
  * @author: shenrong
  * @date: 2024/2/12 20:57
  */
-@FeignClient("feign-client")
+@FeignClient("feign-server")
 public interface IService {
 
     @GetMapping("/sayHi")
