@@ -15,6 +15,7 @@
         <module>ribbon</module>
         <module>eureka-client2</module>
         <module>feign-consumer</module>
+        <module>hystrix</module>
     </modules>
 
     <dependencyManagement>

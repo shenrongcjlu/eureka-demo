@@ -20,4 +20,9 @@ public interface IService {
     @PostMapping("/sayHi")
     Friend sayHi(@RequestBody Friend friend);
 
+    @GetMapping("error")
+    String error();
+
+    @PostMapping("retry")
+    String retry(Integer timeout);
 }

@@ -30,4 +30,22 @@ public class FeignServerController implements IService {
         return friend;
     }
 
+    @Override
+    public String error() {
+        throw new RuntimeException("back sheep");
+    }
+
+    @Override
+    public String retry(Integer timeout) {
+        while (timeout > 0) {
+            try {
+                Thread.sleep(1000);
+                timeout--;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        return "not retry";
+    }
+
 }
